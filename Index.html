@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ Szia</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffb6d9;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.hearts {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  place-items: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hearts span {
+  font-size: clamp(22px, 5vw, 36px);
+  opacity: 0.85;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: clamp(55px, 16vw, 85px);
+  margin: 0;
+  text-shadow: 2px 2px 8px #d45b91;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+<script>
+for (let i = 0; i < 54; i++) {
+  document.write("<span>💗</span>");
+}
+</script>
+</div>
+
+<div class="content">
+  <h1>Szia ❤️</h1>
+  <p>Válaszolj kérlek</p>
+</div>
+
+</body>
+</html>
